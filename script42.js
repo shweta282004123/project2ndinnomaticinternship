@@ -4,7 +4,7 @@ let gameState = {
     flippedCards: [],
     matchedPairs: [],
     score: 0,
-    timeLeft: 45,
+    timeLeft: 30,
     timerInterval: null,
     category: null,
     isGameActive: false
@@ -75,7 +75,7 @@ function initializeGame(category, resume = false) {
             .sort(() => Math.random() - 0.5);
         gameState.matchedPairs = [];
         gameState.score = 0;
-        gameState.timeLeft =45;
+        gameState.timeLeft =30;
         gameState.flippedCards = [];
         gameState.isGameActive = true;
     }
@@ -284,5 +284,5 @@ document.getElementById('reset-scores').addEventListener('click', resetHighScore
 displayHighScores();
 
 document.getElementById('go-home').addEventListener('click', function () {
-    window.location.href = 'index.html'; // Change to your actual home page URL
+    window.location.href = 'index42.html'; // Change to your actual home page URL
 });
