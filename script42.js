@@ -284,5 +284,5 @@ document.getElementById('reset-scores').addEventListener('click', resetHighScore
 displayHighScores();
 
 document.getElementById('go-home').addEventListener('click', function () {
-    window.location.href = 'index42.html'; // Change to your actual home page URL
+    window.location.href = 'index.html'; // Change to your actual home page URL
 });
